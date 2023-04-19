@@ -1,13 +1,14 @@
 import './App.css';
+import Accordian from './candidates/Accordian';
 import CandidatesContainer from './candidates/CandidatesContainer';
-import Todo from './candidates/Todo';
+//import Accordian from './candidates/Accordian';
 import './candidates/new.css'
 
 function App() {
  
 
 //return <Wrapper />;
-  return (<><Todo/></>);
+  return (<><Accordian/></>);
   //<CandidatesContainer>
  // </CandidatesContainer>;
 }

@@ -13,33 +13,36 @@ class Accordian extends React.Component {
         this.change = this.change.bind(this);
 
     }
-    componentDidUpdate()
-    {
-        
+    componentDidUpdate(prevState) {
+        console.log(this.state.activePanel)
+        // console.log(prevState)
+
+
+
     }
 
     change(e) {
         console.log(e)
-       // this.setState({activePanel:e})
-        
-        
-        if (e == 2) {
-            this.setState({activePanel: 2})
-            
-            // console.log(this.state.activePanel)
+        this.setState({ activePanel: e })
 
-        }
-        else {
-            this.setState({ activePanel: 1 })
-            // console.log(this.state.activePanel)
-        }
+
+        // if (e == 2) {
+        //     this.setState({activePanel: 2})
+
+        //     // console.log(this.state.activePanel)
+
+        // }
+        // else {
+        //     this.setState({ activePanel: 1 })
+        //     // console.log(this.state.activePanel)
+        // }
 
     }
     render() {
         return (<>
-        <PanelA change={this.change} />
-        <PanelB change={this.change} />
-        {/* { <h2>panel A</h2>
+            <PanelA change={this.change} activePanel={this.state.activePanel} />
+            <PanelB change={this.change} activePanel={this.state.activePanel} />
+            {/* { <h2>panel A</h2>
 
             <button onClick={(e) => this.change(1)}>click</button>
             {

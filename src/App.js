@@ -8,7 +8,8 @@ function App() {
  
 
 //return <Wrapper />;
-  return (<><Accordian/></>);
+  return (<><Accordian/>
+  </>);
   //<CandidatesContainer>
  // </CandidatesContainer>;
 }

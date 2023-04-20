@@ -5,10 +5,10 @@ import AccoPanelB from "./AccoPanelB";
 
 const Acco=()=> {
     
-    const[activePanel,CurrentPanel]=useState(0)
-    const change =(e)=>
+    const[activePanel,SetActivePanel]=useState(0)
+    const change =(para)=>
     {
-        CurrentPanel(e);
+        SetActivePanel(para);
     }
     return(<>
     <AccoPanelA change={change} activePanel={activePanel}/>

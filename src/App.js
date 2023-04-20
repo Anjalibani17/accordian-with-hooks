@@ -2,14 +2,16 @@ import './App.css';
 import Accordian from './candidates/Accordian';
 import CandidatesContainer from './candidates/CandidatesContainer';
 //import Accordian from './candidates/Accordian';
-import './candidates/new.css'
+import './candidates/new.css';
+import Acco from './candidates/Acco';
+
+
 
 function App() {
  
 
 //return <Wrapper />;
-  return (<><Accordian/>
-  </>);
+  return (<> <Acco/></>);
   //<CandidatesContainer>
  // </CandidatesContainer>;
 }

@@ -1,20 +1,46 @@
 import React from "react";
+import Acco from "./candidates/Acco";
+//const Panel = ({ panelContent, change, activePanel ,index,panelTitle}) => {
+    const Panel = ({ panelTitle, panelContent, activePanel, change, index ,panelInfo}) => {
 
-const Panel = ({ panelTitle, panelContent, activePanel, change ,index }) => {
+        return (
+            <>
+            {/* <h2>{panelTitle}</h2>
+                {panelContent.map((data, index) => {
+                    return (<>
+                        
+                        <button onClick={() => change(index)}>Click</button>
+                        {(activePanel == index
+                            ?
+                            <>
+                                <p>{panelInfo}</p>
+                            </>
+                            : null
+                        )}
+                    </>)
 
-    return (
-        <>
-            <h2>{panelTitle}</h2>
-            <button onClick={() => change(index)}>Click</button>
-            { (activePanel==index
-            ?
-                <>
-                    <p>{panelContent}</p>
-                </>
-                :null
-            )}
-        </>
-    );
+                })
+                } */}
+                
+    
+      <h2>{panelTitle}</h2>
+      <button onClick={() => change(index)}>click</button>
+      {activePanel === index && <p>{panelInfo}</p>}
+    </>
+  );
 };
 
+
+
+   
+//     return(<>
+
+//         <h2>{panelTitle}</h2>
+//         <button onClick={() => { change(index) }}>{(activePanel === index) ? "-" : "+"}</button>
+
+
+//         <p>{panelContent}</p>
+
+//     </>);
+// }
 export default Panel;

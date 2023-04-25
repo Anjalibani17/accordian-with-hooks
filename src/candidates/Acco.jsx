@@ -22,15 +22,15 @@ const Acco = () => {
         }
     }
     const panelContent = [{
-        Title: "panel A",
+        Title: "panel A(click here)",
         Info: "this is panel A "
     },
     {
-        Title: "panel B",
+        Title: "panel B (click here)",
         Info: "this is panel B"
     },
     {
-        Title: "panel C",
+        Title: "panel C (click here)",
         Info: "this is panel c"
     },
     ];

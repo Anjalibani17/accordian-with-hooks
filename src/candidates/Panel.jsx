@@ -23,8 +23,8 @@ import Acco from "./Acco";
                 } */}
                 
     
-      <h2>{panelTitle}</h2>
-      <button onClick={() => change(index)}>click</button>
+      <h3 onClick={() => change(index)}>{panelTitle}</h3>
+      {/* <button >click</button> */}
       {activePanel === index && <p>{panelInfo}</p>}
     </>
   );

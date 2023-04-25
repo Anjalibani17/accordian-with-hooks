@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import AccoPanelA from "./AccoPanelA";
 import AccoPanelB from "./AccoPanelB";
-import Panel from "../Panel";
+import Panel from "./Panel";
 
 // let panel = [{
 //     panelContent: "h",

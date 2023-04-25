@@ -1,5 +1,5 @@
 import React from "react";
-import Acco from "./candidates/Acco";
+import Acco from "./Acco";
 //const Panel = ({ panelContent, change, activePanel ,index,panelTitle}) => {
     const Panel = ({ panelTitle, panelContent, activePanel, change, index ,panelInfo}) => {
 
